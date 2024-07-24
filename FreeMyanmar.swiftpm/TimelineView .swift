@@ -112,10 +112,12 @@ struct TimelineView: View{
                     offset -= 275
                 }
             }
-            NavigationLink("Enter"){
-                if progress==0{
+            NavigationStack{
+                NavigationLink("Enter"){
+                    
                     IntroductionView()
                         .navigationBarBackButtonHidden()
+                    
                 }
             }
             .offset(x: -5,y: -50)
@@ -124,7 +126,9 @@ struct TimelineView: View{
             .foregroundStyle(.green)
             .fontDesign(.rounded)
             .bold()
-            
+            .onTapGesture {
+                print(progress)
+            }
         }
         .offset(y: 200)
     }

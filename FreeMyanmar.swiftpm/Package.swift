@@ -8,13 +8,13 @@ import PackageDescription
 import AppleProductTypes
 
 let package = Package(
-    name: "SSC25 submission",
+    name: "FreeMyanmar",
     platforms: [
         .iOS("17.2")
     ],
     products: [
         .iOSApplication(
-            name: "SSC25 submission",
+            name: "FreeMyanmar",
             targets: ["AppModule"],
             displayVersion: "1.0",
             bundleVersion: "1",
